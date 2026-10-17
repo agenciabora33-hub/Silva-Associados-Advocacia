@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-luxury-dark: #111827;
+  --color-luxury-slate: #1f2937;
+  --color-luxury-gold: var(--theme-primary, #c5a059);
+  --color-luxury-gold-light: var(--theme-secondary, #d4af37);
+  --color-luxury-gold-subtle: var(--theme-subtle, #f4ede0);
+  --color-luxury-bg: #f9fafb;
+}
+
+:root {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+  --theme-primary: #c5a059;
+  --theme-secondary: #d4af37;
+  --theme-subtle: #f4ede0;
+}
+
+html[data-theme="gold"], :root[data-theme="gold"] {
+  --theme-primary: #c5a059;
+  --theme-secondary: #d4af37;
+  --theme-subtle: #f4ede0;
+}
+
+html[data-theme="navy"], :root[data-theme="navy"] {
+  --theme-primary: #1d4ed8;
+  --theme-secondary: #3b82f6;
+  --theme-subtle: #eff6ff;
+}
+
+html[data-theme="bordeaux"], :root[data-theme="bordeaux"] {
+  --theme-primary: #9f1239;
+  --theme-secondary: #be123c;
+  --theme-subtle: #fff1f2;
+}
+
+html[data-theme="emerald"], :root[data-theme="emerald"] {
+  --theme-primary: #047857;
+  --theme-secondary: #10b981;
+  --theme-subtle: #ecfdf5;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(197, 160, 89, 0.15);
+}
+
+.glass-panel-dark {
+  background: rgba(17, 24, 39, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* Theme-adaptive accent text */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #111827 0%, #374151 40%, var(--theme-primary, #c5a059) 80%, var(--theme-secondary, #d4af37) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-accent-text {
+  background: linear-gradient(135deg, var(--theme-primary, #c5a059) 0%, var(--theme-secondary, #d4af37) 50%, var(--theme-primary, #9e7a33) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

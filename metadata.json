@@ -1,0 +1,8 @@
+{
+  "name": "Advogada Letícia Possenti",
+  "description": "Advocacia estratégica e humanizada em Direito de Família, Sucessões, Inventários e Apoio Jurídico Especializado em Caxias do Sul e todo o Brasil.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

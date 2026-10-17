@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Dedicated rules for Google Ads and Meta Ads crawlers
+User-agent: Google-AdsBot
+Allow: /
+
+User-agent: Google-AdsBot-Mobile
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+Sitemap: https://leticiapossenti.com.br/sitemap.xml
